@@ -1,0 +1,54 @@
+3.类的实例化
+定义一个类,就相当于在计算机中定义了一种新的类型,与int,double类似,只不过int和double是java语言自带的内置类型,而类使用户自定义了一个新的类型
+比如上述的:PetDog类和Student类,它们都是类(一种新定义的类型)有了这些自定义的类型之后,就可以使用这些类来定义实例(或者称为对象)
+  用类类型创建对象的过程,称为类的实例化,在java中采用new关键字,配合类名来实例化对象
+    public class Main {
+       public static void main(String[] args) {
+      PetDog dogh = new PetDog();   //通过new实例化对象
+      dogh.name = "阿黄";
+      dogh.color = "黑黄";
+      dogh.barks();
+   dogh.wag();
+
+ PetDog dogs = new PetDog();
+ dogs.name = "阿黄";
+ dogs.color = "黑黄";
+  dogs.barks();
+ dogs.wag();
+  }
+}
+
+
+输出结果:
+阿黄:汪汪~~~
+阿黄:摇尾巴~~~
+赛虎:旺旺旺~~~
+赛虎:摇尾巴~~~
+
+注意事项:
+.new关键字用于创建一个对象的实例
+.使用.来访问对象中的属性和方法
+.同一个类可以创建多个实例
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
